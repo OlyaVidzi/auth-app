@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --exec ts-node src/index.ts",
-    "build": "prisma generate && tsc",
+    "build": "npm install prisma && prisma generate && tsc",
     "start": "node build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
