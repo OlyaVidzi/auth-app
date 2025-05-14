@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "nodemon --exec ts-node src/index.ts",
     "build": "tsc",
@@ -11,6 +11,9 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "engines": {
+    "node": "20.x" 
+  },
   "dependencies": {
     "@prisma/client": "^6.7.0",
     "cors": "^2.8.5",
